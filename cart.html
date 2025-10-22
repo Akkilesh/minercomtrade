@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Minercomtrade</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Add this line in the <head> section -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+      crossorigin="anonymous">
+
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    
+  </head>
+    <style>
+      .cart-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .empty-cart {
+        text-align: center;
+        padding: 40px;
+        color: #6c757d;
+      }
+      .empty-cart i {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        color: #dee2e6;
+      }
+    </style>
+  <body>
+    <!-- Spinner -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <!-- Topbar -->
+    <div class="container-fluid bg-dark p-0 d-flex justify-content-end">
+      <div class="row gx-0 d-none d-lg-flex">
+        <div class="col-lg-12 px-5 text-start">
+          <!-- WhatsApp Icon -->
+          <a
+            class="btn rounded-0 whatsappIcon"
+            href="https://wa.me/7208600363?text=Hello! I am interested in your products/services. Can you please provide more details?"
+            target="_blank"
+          >
+            <div class="h-100 d-inline-flex align-items-center text-white">
+              <small class="fab fa-whatsapp text-primary me-2"></small>
+            </div>
+          </a>
+
+          <!-- LinkedIn Icon -->
+          <a
+            class="btn rounded-0 linkedinIcon"
+            href="https://www.linkedin.com/company/minercom-trade-and-export-llp/?viewAsMember=true"
+            target="_blank"
+          >
+            <div class="h-100 d-inline-flex align-items-center text-white">
+              <small class="fab fa-linkedin text-primary me-2"></small>
+            </div>
+          </a>
+
+          <a class="btn rounded-0" href="tel:+917208600363" target="_blank">
+            <div
+              class="h-100 d-inline-flex align-items-center mx-n2 text-white"
+            >
+              <small
+                class="fa fa-phone-alt text-primary me-2"
+              ></small>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+      <a
+        href="index.html"
+        class="navbar-brand d-flex align-items-center px-4 px-lg-2"
+      >
+        <h4 class="m-0 text-primary">
+          <img style="width: 4rem" src="./img/logo.png" alt="" />
+          Minercom Trade and Export
+        </h4>
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler me-4"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+          <a href="./index.html#home" class="nav-item nav-link active">Home</a>
+          <a href="./index.html#about_us" class="nav-item nav-link">About Us</a>
+          <a href="./index.html#services" class="nav-item nav-link"
+            >Our Products</a
+          >
+          <a href="./index.html#products" class="nav-item nav-link"
+            >Our Products</a
+          >
+          <a href="./index.html#case_study" class="nav-item nav-link">Case Study</a>
+          <a href="./index.html#our_team" class="nav-item nav-link">Team</a>
+          <a href="./index.html#certificate" class="nav-item nav-link"
+            >Certifications</a
+          >
+
+          <a href="./index.html#contact_us" class="nav-item nav-link">Contact Us</a>
+          <a style="position: relative;" href="././cart.html" class="nav-item nav-link">
+            <i class="fas fa-shopping-cart"></i> View Cart
+            <span
+              id="cartCount"
+              class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger"
+              style="display: none"
+              >0</span
+            >
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="container-fluid page-header py-5 mb-5">
+      <div class="container py-5">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">
+          Your Cart
+        </h1>
+        <h3 class="text-white">Review your order and proceed to checkout</h3>
+      </div>
+    </div>
+
+    <!-- Cart Content -->
+    <div class="container cart-container">
+      <div id="cartContent">
+        <!-- Cart items will be loaded here -->
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-md-8">
+          <h3>Checkout Information</h3>
+          <form id="orderForm" class="bg-light p-4 rounded">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Full Name *</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Email Address *</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="your.email@example.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Phone Number *</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  class="form-control"
+                  placeholder="+91 1234567890"
+                  required
+                />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Company Name</label>
+                <input
+                  type="text"
+                  name="company"
+                  class="form-control"
+                  placeholder="Your Company (Optional)"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Shipping Address *</label>
+              <textarea
+                name="address"
+                class="form-control"
+                placeholder="Full shipping address"
+                rows="3"
+                required
+              ></textarea>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Additional Message</label>
+              <textarea
+                name="message"
+                class="form-control"
+                placeholder="Any special requirements or notes..."
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button
+                type="button"
+                id="clearCart"
+                class="btn btn-outline-danger me-md-2"
+              >
+                <i class="fas fa-trash me-1"></i> Clear Cart
+              </button>
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane me-1"></i> Send Order Inquiry
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <div class="bg-light p-4 rounded">
+            <h4>Order Summary</h4>
+            <div id="orderSummary">
+              <!-- Order summary will be loaded here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- Include your footer here -->
+        <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark text-body footer wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Address</h5>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>WeWork Oberoi Commerz II,
+              21st Floor, Mohan Gokhale Rd, Aarey Milk Colony, Mumbai,
+              Maharashtra – 400063.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Quick Links</h5>
+            <a class="btn btn-link" href="#about_us">About Us</a>
+            <a class="btn btn-link" href="#services">Our Products</a>
+            <a class="btn btn-link" href="#case_study">Case Study</a>
+            <a class="btn btn-link" href="#our_team">Team</a>
+            <a class="btn btn-link" href="#certificate">Certification</a>
+            <a class="btn btn-link" href="#contact_us">Contact Us</a>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Our Offices</h5>
+            <h6 class="text-white">INDIA</h6>
+            <p>
+              WeWork Oberoi Commerz II, 21st Floor, Mohan Gokhale Rd, Aarey Milk
+              Colony, Mumbai, Maharashtra – 400063
+            </p>
+            <h6 class="text-white">KENYA</h6>
+            <p>Broadwalk Residency, Ojijo Rd, Nairobi, Kenya</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Socials</h5>
+            <p class="mb-2">
+              <i
+                style="transform: rotate(90deg)"
+                class="fa fa-phone-alt me-3 text-white"
+              ></i>
+              <a
+                class="text-white text-decoration-none"
+                href="tel:91 7208600363"
+                >+91 72086 00363</a
+              >
+            </p>
+
+            <p class="mb-2">
+              <i class="fas fa-envelope me-3 text-white"></i>
+              <a
+                class="text-white text-decoration-none"
+                href="mailto:minercomtrade@gmail.com"
+                >minercomtrade@gmail.com</a
+              >
+            </p>
+
+            <p class="mb-2">
+              <i class="fab fa-linkedin me-3 text-white"></i>
+              <a
+                class="text-white text-decoration-none"
+                href="https://www.linkedin.com/company/minercom-trade-and-export-llp/?viewAsMember=true
+"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div
+              class="col-md-6 text-center text-md-start mb-3 mb-md-0 text-white"
+            >
+              &copy; Copyright - MINERCOM TRADE AND EXPORT LLP.
+            </div>
+
+            <div class="col-md-6 text-center text-md-end"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- EmailJS Library -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script src="./cart.js"></script>
+
+    <script>
+      // Initialize EmailJS
+      emailjs.init("Pv1KbCsdK5tK4d1rV");
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const cartKey = "minercom_cart";
+        let cart = JSON.parse(localStorage.getItem(cartKey)) || [];
+        const cartContent = document.getElementById("cartContent");
+        const orderSummary = document.getElementById("orderSummary");
+        const cartCount = document.getElementById("cartCount");
+
+        // Hide spinner
+        document.getElementById("spinner").classList.remove("show");
+
+        function displayCart() {
+          updateCartCount();
+
+          if (cart.length === 0) {
+            cartContent.innerHTML = `
+              <div class="empty-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <h3>Your cart is empty</h3>
+                <p>Add some products to your cart to see them here.</p>
+                <a href="index.html#products" class="btn btn-primary">
+                  <i class="fas fa-shopping-bag me-2"></i>Continue Shopping
+                </a>
+              </div>
+            `;
+            orderSummary.innerHTML =
+              '<p class="text-muted">No items in cart</p>';
+            return;
+          }
+
+          // Display cart items
+          let cartHTML = `
+            <div class="card">
+              <div class="card-header">
+                <h4 class="mb-0">Cart Items (${cart.length})</h4>
+              </div>
+              <div class="card-body p-0">
+                <div class="table-responsive">
+                  <table class="table table-bordered table-hover mb-0">
+                    <thead class="table-light">
+                      <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+          `;
+
+          let grandTotal = 0;
+          cart.forEach((item, index) => {
+            const price = parseFloat(item.price.replace(/[^0-9.]/g, "")) || 0;
+            const subtotal = price * item.quantity;
+            grandTotal += subtotal;
+
+            cartHTML += `
+              <tr>
+                <td>
+                  <strong>${item.name}</strong>
+                  <br><small class="text-muted">ID: ${item.id}</small>
+                </td>
+                <td>${item.price}</td>
+                <td>
+                  <div class="input-group input-group-sm" style="width: 120px;">
+                    <button class="btn btn-outline-secondary minus-btn" data-index="${index}" type="button">-</button>
+                    <input type="text" class="form-control text-center quantity-input" value="${
+                      item.quantity
+                    }" readonly>
+                    <button class="btn btn-outline-secondary plus-btn" data-index="${index}" type="button">+</button>
+                  </div>
+                </td>
+                <td>$${subtotal.toFixed(2)}</td>
+                <td>
+                  <button class="btn btn-sm btn-outline-danger remove-btn" data-index="${index}">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </td>
+              </tr>
+            `;
+          });
+
+          cartHTML += `
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          `;
+
+          cartContent.innerHTML = cartHTML;
+
+          // Display order summary
+          orderSummary.innerHTML = `
+            <div class="d-flex justify-content-between mb-2">
+              <span>Subtotal:</span>
+              <span>$${grandTotal.toFixed(2)}</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span>Shipping:</span>
+              <span>Calculated at checkout</span>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between mb-3">
+              <strong>Total:</strong>
+              <strong>$${grandTotal.toFixed(2)}</strong>
+            </div>
+            <small class="text-muted">* Prices are in USD. Final quote will be provided after inquiry.</small>
+          `;
+
+          // Add event listeners for buttons
+          attachEventListeners();
+        }
+
+        function updateCartCount() {
+          const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+          cartCount.textContent = totalItems;
+          cartCount.style.display = totalItems > 0 ? "inline-block" : "none";
+        }
+
+        function attachEventListeners() {
+          // Plus buttons
+          document.querySelectorAll(".plus-btn").forEach((btn) => {
+            btn.addEventListener("click", function () {
+              const index = parseInt(this.dataset.index);
+              cart[index].quantity += 1;
+              saveCart();
+            });
+          });
+
+          // Minus buttons
+          document.querySelectorAll(".minus-btn").forEach((btn) => {
+            btn.addEventListener("click", function () {
+              const index = parseInt(this.dataset.index);
+              if (cart[index].quantity > 1) {
+                cart[index].quantity -= 1;
+                saveCart();
+              }
+            });
+          });
+
+          // Remove buttons
+          document.querySelectorAll(".remove-btn").forEach((btn) => {
+            btn.addEventListener("click", function () {
+              const index = parseInt(this.dataset.index);
+              if (confirm("Remove this item from cart?")) {
+                cart.splice(index, 1);
+                saveCart();
+              }
+            });
+          });
+        }
+
+        function saveCart() {
+          localStorage.setItem(cartKey, JSON.stringify(cart));
+          displayCart();
+        }
+
+        // Clear cart button
+        document
+          .getElementById("clearCart")
+          .addEventListener("click", function () {
+            if (cart.length === 0) {
+              alert("Cart is already empty!");
+              return;
+            }
+
+            if (confirm("Are you sure you want to clear your entire cart?")) {
+              localStorage.removeItem(cartKey);
+              cart = [];
+              displayCart();
+            }
+          });
+
+        // Form submission with EmailJS
+        document
+          .getElementById("orderForm")
+          .addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            if (cart.length === 0) {
+              alert(
+                "Please add items to your cart before submitting an order."
+              );
+              return;
+            }
+
+            const formData = new FormData(this);
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.innerHTML;
+
+            // Show loading state
+            submitButton.innerHTML =
+              '<i class="fas fa-spinner fa-spin me-1"></i> Sending...';
+            submitButton.disabled = true;
+
+            const orderDetails = cart
+              .map(
+                (item) =>
+                  `${item.name} (Quantity: ${item.quantity}) - ${item.price} each`
+              )
+              .join("\n");
+
+            const totalAmount = cart.reduce((total, item) => {
+              const price = parseFloat(item.price.replace(/[^0-9.]/g, "")) || 0;
+              return total + price * item.quantity;
+            }, 0);
+
+            // Prepare email template parameters
+            const templateParams = {
+              customer_name: formData.get("name"),
+              customer_email: formData.get("email"),
+              customer_phone: formData.get("phone"),
+              customer_company: formData.get("company") || "Not provided",
+              customer_address: formData.get("address"),
+              customer_message:
+                formData.get("message") || "No additional message",
+              order_details: orderDetails,
+              total_amount: `$${totalAmount.toFixed(2)}`,
+              order_date: new Date().toLocaleDateString(),
+              order_time: new Date().toLocaleTimeString(),
+            };
+
+            // Send email using EmailJS - REPLACE 'your_template_id' with your actual template ID
+            emailjs
+              .send("service_b3p2yvm", "template_1lr82m7", templateParams)
+              .then(
+                function (response) {
+                  console.log("SUCCESS!", response.status, response.text);
+                  alert(
+                    "Order inquiry sent successfully! We will contact you shortly to confirm your order and provide final pricing."
+                  );
+
+                  // Clear cart after successful submission
+                  localStorage.removeItem(cartKey);
+                  cart = [];
+                  displayCart();
+                  document.getElementById("orderForm").reset();
+                },
+                function (error) {
+                  console.log("FAILED...", error);
+                  alert(
+                    "Sorry, there was an error sending your inquiry. Please try again or contact us directly."
+                  );
+                }
+              )
+              .finally(function () {
+                // Reset button state
+                submitButton.innerHTML = originalText;
+                submitButton.disabled = false;
+              });
+          });
+
+        // Initial display
+        displayCart();
+      });
+    </script>
+  </body>
+</html>

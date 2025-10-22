@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Minercomtrade</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+ <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+/>
+
+<style>
+  .portfolio-img {
+  height: 250px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.portfolio-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image fills the area without distortion */
+}
+
+</style>
+
+
+    
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+      crossorigin="anonymous">
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark p-0 d-flex justify-content-end">
+      <div class="row gx-0 d-none d-lg-flex">
+        <div class="col-lg-12 px-5 text-start">
+          <!-- WhatsApp Icon -->
+          <a
+            class="btn rounded-0 whatsappIcon"
+            href="https://wa.me/7208600363?text=Hello! I am interested in your products/services. Can you please provide more details?"
+            target="_blank"
+          >
+            <div class="h-100 d-inline-flex align-items-center text-white">
+              <small class="fab fa-whatsapp text-primary me-2"></small>
+            </div>
+          </a>
+
+          <!-- LinkedIn Icon -->
+          <a
+            class="btn rounded-0 linkedinIcon"
+            href="https://www.linkedin.com/company/minercom-trade-and-export-llp/?viewAsMember=true"
+            target="_blank"
+          >
+            <div class="h-100 d-inline-flex align-items-center text-white">
+              <small class="fab fa-linkedin text-primary me-2"></small>
+            </div>
+          </a>
+
+          <a class="btn rounded-0" href="tel:+917208600363" target="_blank">
+            <div
+              class="h-100 d-inline-flex align-items-center mx-n2 text-white"
+            >
+              <small
+                class="fa fa-phone-alt text-primary me-2"
+              ></small>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+      <a
+        href="index.html"
+        class="navbar-brand d-flex align-items-center px-4 px-lg-2"
+      >
+        <h4 class="m-0 text-primary">
+          <img style="width: 4rem" src="./img/logo.png" alt="" />
+          Minercom Trade and Export
+        </h4>
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler me-4"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+          <a href="./index.html#home" class="nav-item nav-link active">Home</a>
+          <a href="./index.html#about_us" class="nav-item nav-link">About Us</a>
+          <a href="./index.html#services" class="nav-item nav-link"
+            >Our Products</a
+          >
+          <a href="./index.html#products" class="nav-item nav-link"
+            >Our Products</a
+          >
+          <a href="#case_study" class="nav-item nav-link">Case Study</a>
+          <a href="./index.html#our_team" class="nav-item nav-link">Team</a>
+          <a href="./index.html#certificate" class="nav-item nav-link"
+            >Certifications</a
+          >
+
+          <a href="./index.html#contact_us" class="nav-item nav-link"
+            >Contact Us</a
+          >
+          <a style="position: relative;" href="././cart.html" class="nav-item nav-link">
+            <i class="fas fa-shopping-cart"></i> View Cart
+            <span
+              id="cartCount"
+              class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger"
+              style="display: none"
+              >0</span
+            > 
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5">
+      <div class="container py-5">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">
+          Agro Commodities
+        </h1>
+      </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-5" id="products">
+      <div class="container">
+        <div
+          class="text-center mx-auto mb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 600px"
+        >
+          <h4 class="text-primary">Our Product Categories</h4>
+          <h2 class="mb-4">
+            Explore our diverse range of high-quality products for global trade
+          </h2>
+        </div>
+
+        <div
+          class="row g-4 portfolio-container wow fadeInUp"
+          data-wow-delay="0.5s"
+        >
+          <div class="col-lg-4 col-md-6 portfolio-item first">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="./img/rice.jpg" alt="" />
+              <div class="portfolio-btn"></div>
+            </div>
+            <div class="pt-3">
+              <p class="text-primary mb-0">Basmati Rice</p>
+              <hr class="text-primary w-25 my-2" />
+
+              <button class="btn btn-block view-detail" data-id="1">
+                <a class="text-white" href="./basmati-rice.html">
+                  View Details
+                </a>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item first">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="./img/nonbasmati/non-basmati-rice.webp" alt="" />
+              <div class="portfolio-btn"></div>
+            </div>
+            <div class="pt-3">
+              <p class="text-primary mb-0">Non Basmati Rice</p>
+              <hr class="text-primary w-25 my-2" />
+
+              <button class="btn btn-block view-detail" data-id="1">
+                <a class="text-white" href="./nonbasmati-rice.html">
+                  View Details
+                </a>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item first">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="./img/sugar/sugar.jfif" alt="" />
+              <div class="portfolio-btn"></div>
+            </div>
+            <div class="pt-3">
+              <p class="text-primary mb-0">Sugar</p>
+              <hr class="text-primary w-25 my-2" />
+
+              <button class="btn btn-block view-detail" data-id="1">
+                <a class="text-white" href="./sugar.html"> View Details </a>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item first">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="./img/cashews/cashews.jfif" alt="" />
+              <div class="portfolio-btn"></div>
+            </div>
+            <div class="pt-3">
+              <p class="text-primary mb-0">Cashews</p>
+              <hr class="text-primary w-25 my-2" />
+              <button class="btn btn-block view-detail" data-id="1">
+                <a class="text-white" href="./cashews.html"> View Details </a>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item first">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="./img/cashews/figs.jpg" alt="" />
+              <div class="portfolio-btn"></div>
+            </div>
+            <div class="pt-3">
+              <p class="text-primary mb-0">Other Products</p>
+              <hr class="text-primary w-25 my-2" />
+              <button class="btn btn-block view-detail" data-id="1">
+                <a class="text-white" href="./other_product.html">
+                  View Details
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Projects End -->
+
+    <!-- Footer Start -->
+  <div
+      class="container-fluid bg-dark text-body footer wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Address</h5>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>WeWork Oberoi Commerz II,
+              21st Floor, Mohan Gokhale Rd, Aarey Milk Colony, Mumbai,
+              Maharashtra – 400063.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Quick Links</h5>
+            <a class="btn btn-link" href="#about_us">About Us</a>
+            <a class="btn btn-link" href="#services">Our Products</a>
+            <a class="btn btn-link" href="#case_study">Case Study</a>
+            <a class="btn btn-link" href="#our_team">Team</a>
+            <a class="btn btn-link" href="#certificate">Certification</a>
+            <a class="btn btn-link" href="#contact_us">Contact Us</a>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Our Offices</h5>
+            <h6 class="text-white">INDIA</h6>
+            <p>
+              WeWork Oberoi Commerz II, 21st Floor, Mohan Gokhale Rd, Aarey Milk
+              Colony, Mumbai, Maharashtra – 400063
+            </p>
+            <h6 class="text-white">KENYA</h6>
+            <p>Broadwalk Residency, Ojijo Rd, Nairobi, Kenya</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Socials</h5>
+            <p class="mb-2">
+              <i style="transform: rotate(90deg);" class="fa fa-phone-alt me-3 text-white"></i>
+              <a class="text-white text-decoration-none" href="tel:91 7208600363">+91 72086 00363</a>
+            </p>
+
+            <p class="mb-2">
+              <i class="fas fa-envelope me-3 text-white"></i>
+              <a class="text-white text-decoration-none" href="mailto:minercomtrade@gmail.com"
+                >minercomtrade@gmail.com</a
+              >
+            </p>
+
+            <p class="mb-2">
+              <i class="fab fa-linkedin me-3 text-white"></i>
+              <a
+                class="text-white text-decoration-none"
+                href="https://www.linkedin.com/company/minercom-trade-and-export-llp/?viewAsMember=true
+"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div
+              class="col-md-6 text-center text-md-start mb-3 mb-md-0 text-white"
+            >
+              &copy; Copyright - MINERCOM TRADE AND EXPORT LLP.
+            </div>
+
+            <div class="col-md-6 text-center text-md-end"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a
+      href="#"
+      class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    <script src="./js/cart.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Minercomtrade</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Add this line in the <head> section -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+      crossorigin="anonymous">
+
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark p-0 d-flex justify-content-end">
+      <div class="row gx-0 d-none d-lg-flex">
+        <div class="col-lg-12 px-5 text-start">
+          <!-- WhatsApp Icon -->
+          <a
+            class="btn rounded-0 whatsappIcon"
+            href="https://wa.me/7208600363?text=Hello! I am interested in your products/services. Can you please provide more details?"
+            target="_blank"
+          >
+            <div class="h-100 d-inline-flex align-items-center text-white">
+              <small class="fab fa-whatsapp text-primary me-2"></small>
+            </div>
+          </a>
+
+          <!-- LinkedIn Icon -->
+          <a
+            class="btn rounded-0 linkedinIcon"
+            href="https://www.linkedin.com/company/minercom-trade-and-export-llp/?viewAsMember=true"
+            target="_blank"
+          >
+            <div class="h-100 d-inline-flex align-items-center text-white">
+              <small class="fab fa-linkedin text-primary me-2"></small>
+            </div>
+          </a>
+
+          <a class="btn rounded-0" href="tel:+917208600363" target="_blank">
+            <div
+              class="h-100 d-inline-flex align-items-center mx-n2 text-white"
+            >
+              <small
+                class="fa fa-phone-alt text-primary me-2"
+              ></small>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+      <a
+        href="index.html"
+        class="navbar-brand d-flex align-items-center px-4 px-lg-2"
+      >
+        <h3 class="m-0 text-primary">
+          <img style="width: 4rem" src="./img/logo.png" alt="" />
+          Minercom Trade and Export
+        </h3>
+        <!-- <h2 class="m-0 text-primary">Minercomtrade </h2> -->
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler me-4"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+          <a href="#home" class="nav-item nav-link active">Home</a>
+          <a href="#about_us" class="nav-item nav-link">About Us</a>
+          <a href="#services" class="nav-item nav-link">Our Products</a>
+          <a href="#case_study" class="nav-item nav-link">Case Study</a>
+          <a href="#our_team" class="nav-item nav-link">Team</a>
+          <a href="#certificate" class="nav-item nav-link">Certifications</a>
+          <a href="#contact_us" class="nav-item nav-link">Contact Us</a>
+          <a style="position: relative;" href="cart.html" class="nav-item nav-link">
+            <i class="fas fa-shopping-cart"></i> View Cart
+            <span
+              id="cartCount"
+              class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger"
+              style="display: none"
+              >0</span
+            >
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div
+      id="home"
+      class="container-fluid p-0 pb-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <!-- Remove owl-carousel classes and use simple div structure -->
+      <div class="position-relative">
+        <video class="w-100" autoplay muted loop playsinline>
+          <source src="https://github.com/Akkilesh/mincercomtrade/raw/main/1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div
+          class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+        >
+          <div class="container">
+            <div class="row justify-content-start">
+              <div class="col-10 col-lg-8">
+                <h1 class="display-2 text-white animated slideInDown">
+                  Linking Markets. Simplifying Global Trade.
+                </h1>
+                <p class="fs-5 fw-medium text-white mb-4">
+                  We connect exporters and importers, bridging market and supply
+                  chain gaps to make global trade transparent, efficient, and
+                  competitive.
+                </p>
+                <a
+                  href="#services"
+                  class="btn btn-primary text-white rounded-pill py-3 px-4 animated slideInLeft exploreProducts m-3"
+                  >Explore Products</a
+                >
+                <a
+                  href="#contact_us"
+                  class="btn btn-primary text-white rounded-pill py-3 px-4 animated slideInLeft partner-us"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Start -->
+    <div class="container-fluid pt-6 pb-6" id="about_us">
+      <div class="container">
+        <div
+          class="text-center mx-auto mb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 600px"
+        >
+          <h4 class="text-primary">About Minercom Trade</h4>
+          <h2 class="mb-4">
+            DPIIT-recognized startup streamlining global trade in
+            agri-commodities, metals, and minerals.
+          </h2>
+        </div>
+        <div class="row g-5">
+          <div
+            class="col-lg-6 wow fadeIn d-flex align-items-center"
+            data-wow-delay="0.1s"
+          >
+            <div class="about-img">
+              <img class="img-fluid w-100" src="img/about.jpg" />
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+            <p class="mb-4">
+              Specializing in the India→Africa trade corridor, we leverage our
+              expertise to ensure seamless transactions and build lasting
+              business relationships.
+            </p>
+            <div class="row g-5">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0 btn-xl-square bg-light me-3">
+                    <i class="fa fa-cogs fa-2x text-primary"></i>
+                  </div>
+                  <h5 class="lh-base text-uppercase mb-0">
+                    Tech-enabled Trade
+                  </h5>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0 btn-xl-square bg-light me-3">
+                    <i class="fa fa-globe fa-2x text-primary"></i>
+                  </div>
+                  <h5 class="lh-base text-uppercase mb-0">Global Presence</h5>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0 btn-xl-square bg-light me-3">
+                    <i class="fa fa-truck fa-2x text-primary"></i>
+                  </div>
+                  <h5 class="lh-base text-uppercase mb-0">
+                    End-to-End Supply Chain
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <p>
+              <i class="fa fa-check-square text-primary me-3"></i>Bridging
+              market and supply chain gaps to make global trade transparent,
+              efficient, and competitive.
+            </p>
+            <p>
+              <i class="fa fa-check-square text-primary me-3"></i>Helping Indian
+              businesses unlock access to high-potential markets worldwide.
+            </p>
+            <p>
+              <i class="fa fa-check-square text-primary me-3"></i>Offering a
+              trusted platform that simplifies and streamlines international
+              trade.
+            </p>
+            <div class="border border-5 border-primary p-4 text-center mt-4">
+              <h4 class="lh-base text-uppercase mb-0">
+                Bridging Global Trade with Technology and Expertise.
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Service Start -->
+    <div class="container-fluid service py-5" id="services">
+      <div class="container py-5">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 800px"
+        >
+          <h4 class="text-primary">Our Products</h4>
+          <h2 class="mb-4">Your Trusted Partner in Global Trade</h2>
+        </div>
+
+        <div class="row g-4 justify-content-center text-center">
+          <div
+            id="agro_products"
+            class="col-md-6 col-lg-4 col-xl-4 wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="service-item bg-light rounded">
+              <div class="service-img">
+                <img
+                  src="./img/pulses.jpg"
+                  class="img-fluid w-100 rounded-top"
+                  alt=""
+                />
+              </div>
+              <div class="service-content text-center p-4">
+                <div class="service-content-inner">
+                  <a
+                    href="#"
+                    class="h4 d-inline-flex text-start align-items-center text-decoration-none"
+                    ><i class="fas fa-seedling fa-2x me-2"></i> Agri
+                    Commodities</a
+                  >
+                  <a href="agri.html" class="hover-link">
+                    <i class="fa-solid fa-share icon-btn icon-share"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="metal_products"
+            class="col-md-6 col-lg-4 col-xl-4 wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
+            <div class="service-item bg-light rounded">
+              <div class="service-img">
+                <img
+                  src="./img/newmetals.jpg"
+                  class="img-fluid w-100 rounded-top"
+                  alt=""
+                />
+              </div>
+              <div class="service-content text-center p-4">
+                <div class="service-content-inner">
+                  <a
+                    href="#"
+                    class="h4 d-inline-flex text-start align-items-center text-decoration-none"
+                    ><i class="fas fa-cube fa-2x me-2"></i> Metals</a
+                  >
+                  <a href="metals.html" class="hover-link">
+                    <i class="fa-solid fa-share icon-btn icon-share"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="mineral_products"
+            class="col-md-6 col-lg-4 col-xl-4 wow fadeInUp"
+            data-wow-delay="0.5s"
+          >
+            <div class="service-item bg-light rounded">
+              <div class="service-img">
+                <img
+                  src="./img/minerals.jpg"
+                  class="img-fluid w-100 rounded-top"
+                  alt=""
+                />
+              </div>
+              <div class="service-content text-center p-4">
+                <div class="service-content-inner">
+                  <a
+                    href="#"
+                    class="h4 d-inline-flex text-start align-items-center text-decoration-none"
+                    ><i class="fas fa-gem fa-2x me-2"></i> Minerals</a
+                  >
+                  <a href="minerals.html" class="hover-link">
+                    <i class="fa-solid fa-share icon-btn icon-share"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Resume Section -->
+    <section id="case_study" class="resume section">
+      <div
+        class="text-center mx-auto wow fadeInUp"
+        data-wow-delay="0.1s"
+        style="max-width: 800px"
+      >
+        <h4 class="text-primary">Our Case Study</h4>
+        <h2 class="mb-2">
+          A Portfolio of Measurable Outcomes. Delivering Freshness Across
+          Borders
+        </h2>
+      </div>
+
+      <!-- Features Start -->
+      <div class="container-fluid features overflow-hidden py-5">
+        <div class="container">
+          <div class="row g-4 justify-content-center text-center">
+            <div
+              class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div class="feature-item text-center p-4">
+                <div class="feature-icon p-3 mb-4">
+                  <i class="fas fa-seedling"></i>
+                </div>
+                <div class="feature-content d-flex flex-column">
+                  <h5 class="mb-3">Agri Commodities</h5>
+                  <!-- <p class="mb-3">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p> -->
+                  <a
+                    class="btn btn-secondary rounded-pill"
+                    href="./agro-casestudy.html"
+                    >Read More<i class="fas fa-arrow-right ms-2"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+              data-wow-delay="0.3s"
+            >
+              <div class="feature-item text-center p-4">
+                <div class="feature-icon p-3 mb-4">
+                  <i class="fas fa-industry"></i>
+                </div>
+                <div class="feature-content d-flex flex-column">
+                  <h5 class="mb-3">Metals</h5>
+                  <!-- <p class="mb-3">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p> -->
+                  <a
+                    class="btn btn-secondary rounded-pill"
+                    href="./metals-casestudy.html"
+                    >Read More<i class="fas fa-arrow-right ms-2"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+              data-wow-delay="0.5s"
+            >
+              <div class="feature-item text-center p-4">
+                <div class="feature-icon p-3 mb-4">
+                  <i class="fas fa-gem"></i>
+                </div>
+                <div class="feature-content d-flex flex-column">
+                  <h5 class="mb-3">Minerals</h5>
+                  <!-- <p class="mb-3">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p> -->
+                  <a
+                    class="btn btn-secondary rounded-pill"
+                    href="./minerals-casestudy.html"
+                    >Read More<i class="fas fa-arrow-right ms-2"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Features End -->
+    </section>
+    <!-- /Resume Section -->
+
+    <!-- Feature Start -->
+    <div
+      class="container-fluid bg-light overflow-hidden my-5 px-lg-0"
+      id="why_us"
+    >
+      <div class="container feature px-lg-0">
+        <div class="row g-0 mx-lg-0">
+          <div
+            class="col-lg-6 feature-text py-5 wow fadeIn"
+            data-wow-delay="0.1s"
+          >
+            <div class="p-lg-5 ps-lg-0">
+              <h4 class="text-primary">Why Choose Us!</h4>
+              <h2 class="mb-4">Effortless Supply Chains You Can Trust</h2>
+              <p class="mb-4 pb-2">
+                Connecting You to Trusted Partners, Smoothly and
+                Securely.Simplifying Logistics, Strengthening Partnerships.From
+                Verified Suppliers to Seamless Delivery, Every Step Covered
+              </p>
+              <div class="row g-4">
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <div class="btn-lg-square bg-primary rounded-circle">
+                      <i class="fas fa-infinity text-white"></i>
+                    </div>
+
+                    <div class="ms-4">
+                      <!-- <p class="mb-0">End-to-end solutions</p> -->
+                      <h5 class="mb-0">End-to-end solutions</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <div class="btn-lg-square bg-primary rounded-circle">
+                      <i class="fas fa-globe-africa text-white"></i>
+                    </div>
+                    <div class="ms-4">
+                      <!-- <p class="mb-0">Local Africa Presence </p> -->
+                      <h5 class="mb-0">Local Africa Presence</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <div class="btn-lg-square bg-primary rounded-circle">
+                      <i class="fas fa-truck text-white"></i>
+                    </div>
+                    <div class="ms-4">
+                      <!-- <p class="mb-0">Seamless Supply Chain </p> -->
+                      <h5 class="mb-0">Seamless Supply Chain</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <div class="btn-lg-square bg-primary rounded-circle">
+                      <i class="fas fa-user-check text-white"></i>
+                    </div>
+                    <div class="ms-4">
+                      <!-- <p class="mb-0">verified Suppliers</p> -->
+                      <h5 class="mb-0">verified Suppliers</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 pe-lg-0 wow fadeIn"
+            data-wow-delay="0.5s"
+            style="min-height: 400px"
+          >
+            <div class="position-relative h-100">
+              <img
+                class="position-absolute img-fluid w-100 h-100"
+                src="img/feature.jpg"
+                style="object-fit: cover"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Feature End -->
+
+    <!-- Team Start -->
+    <div class="container-fluid team pb-5" id="our_team">
+      <div class="container pb-5">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 800px"
+        >
+          <h4 class="text-primary">Our Team</h4>
+          <h2 class="mb-4">Our Dedicated Team Members</h2>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div
+            class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="team-item rounded">
+              <div class="team-img">
+                <img
+                  src="img/1.jpeg"
+                  class="img-fluid w-100 rounded-top"
+                  alt="Image"
+                />
+              </div>
+              <div class="team-content bg-dark text-center rounded-bottom p-3">
+                <div class="team-content-inner rounded-bottom">
+                  <h4 class="text-white">Mr. Mahaveer Reddy Meka</h4>
+                  <p class="text-white mb-0">Head - Finance & Global Markets</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
+            <div class="team-item rounded">
+              <div class="team-img">
+                <img
+                  src="img/2.jpeg"
+                  class="img-fluid w-100 rounded-top"
+                  alt="Image"
+                />
+              </div>
+              <div class="team-content bg-dark text-center rounded-bottom p-3">
+                <div class="team-content-inner rounded-bottom">
+                  <h4 class="text-white">Mr. Sanjib Kumar Banik</h4>
+                  <p class="text-white mb-0">Head - Logistics & Supply Chain</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.5s"
+          >
+            <div class="team-item rounded">
+              <div class="team-img">
+                <img
+                  src="img/3.jpeg"
+                  class="img-fluid w-100 rounded-top"
+                  alt="Image"
+                />
+              </div>
+              <div class="team-content bg-dark text-center rounded-bottom p-3">
+                <div class="team-content-inner rounded-bottom">
+                  <h4 class="text-white">Mr. Prabir Kumar Chowdhury</h4>
+                  <p class="text-white mb-0">
+                    Head - Marketing & Business Development
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team End -->
+
+    <section class="cert-section" id="certificate">
+      <div class="container">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 800px"
+        >
+          <h4 class="text-primary">Certifications & Memberships</h4>
+          <h2 class="mb-2">
+            Certified by India's key trade authorities to ensure compliance,
+            trust, and global credibility
+          </h2>
+        </div>
+
+        <div class="row g-4">
+          <!-- MEME Certification -->
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="cert-card"
+              data-bs-toggle="modal"
+              data-bs-target="#memeModal"
+            >
+              <div class="cert-img-container meme">
+                <img width="100%" src="./img/dpiit.webp" alt="" />
+              </div>
+              <div class="cert-body">
+                <h5 class="cert-title">CERIFICATE OF REGISTRATION</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- APEDA Certification -->
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="cert-card"
+              data-bs-toggle="modal"
+              data-bs-target="#apedaModal"
+            >
+              <div class="cert-img-container apeda">
+                <img width="100%" src="./img/aped.jpeg" alt="" />
+                <!-- <i class="cert-icon fa-solid fa-certificate"></i> -->
+              </div>
+              <div class="cert-body">
+                <h5 class="cert-title">APEDA</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- GST Certification 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="cert-card"
+              data-bs-toggle="modal"
+              data-bs-target="#gstModal1"
+            >
+              <div class="cert-img-container gst">
+                <img width="100%" src="./img/fssai.jpg" alt="" />
+              </div>
+              <div class="cert-body">
+                <h5 class="cert-title">FSSAI</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- GST Certification 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="cert-card"
+              data-bs-toggle="modal"
+              data-bs-target="#gstModal2"
+            >
+              <div class="cert-img-container gst">
+                <img width="100%" src="./img/Udyam-registration.png" alt="" />
+              </div>
+              <div class="cert-body">
+                <h5 class="cert-title">UDYAM REGISTRATION</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Start -->
+    <div class="container-fluid contact bg-light py-5" id="contact_us">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+            <div class="contact-item">
+              <div class="pb-2">
+                <h4 class="text-primary">Contact Us</h4>
+                <h2 class="mb-4">
+                  Looking to Source Agri, Metals, or Minerals. Let's Connect.
+                </h2>
+              </div>
+              <div class="d-flex align-items-center mb-4">
+                <div class="bg-primary btn-lg-square rounded-circle p-4">
+                  <i class="fa fa-home text-white"></i>
+                </div>
+                <div class="ms-4">
+                  <h4>Addresses</h4>
+                  <p class="mb-0">
+                    <b>INDIA</b> - A-704, Snow Drop CHS Ltd, Off Holy Cross IC
+                    Colony, Near YMCA Ground, Borivali West, Mumbai - 400103,
+                    Maharashtra, India.
+                  </p>
+                  <p class="mb-0">
+                    <b>KENYA</b> - Broadwalk Residency, Ojijo Rd, Nairobi,
+                    Kenya.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center mb-4">
+                <div class="bg-primary btn-lg-square rounded-circle p-2">
+                  <i class="fa fa-phone-alt text-white"></i>
+                </div>
+                <div class="ms-4">
+                  <h4>Mobile</h4>
+                  <p class="mb-0"><b>INDIA</b> - +91 9619445583 / 9028500363</p>
+                  <p class="mb-0"><b>KENYA</b> - +254 725862967/ 723259622</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center mb-4">
+                <div class="bg-primary btn-lg-square rounded-circle p-2">
+                  <i class="fa fa-envelope-open text-white"></i>
+                </div>
+                <div class="ms-4">
+                  <h4>Email</h4>
+                  <p class="mb-0">
+                    info@minercomtrade.in / minercomtrade@gmail.com
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+            <form>
+              <div class="row g-3">
+                <div class="col-lg-12 col-xl-6">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                    />
+                    <label for="name">Name</label>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-xl-6">
+                  <div class="form-floating">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Your Email"
+                    />
+                    <label for="email">Email ID</label>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-xl-6">
+                  <div class="form-floating">
+                    <input
+                      type="phone"
+                      class="form-control"
+                      id="phone"
+                      placeholder="Phone"
+                    />
+                    <label for="phone">Phone Number</label>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-xl-6">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="project"
+                      placeholder="Project"
+                    />
+                    <label for="project">Designation</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="subject"
+                      placeholder="Subject"
+                    />
+                    <label for="subject">Subject</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control"
+                      placeholder="Leave a message here"
+                      id="message"
+                      style="height: 160px"
+                    ></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary w-100 py-3">
+                    Enquire Us
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="container">
+            <!-- <div class="header">
+              <h1>Explore India & Kenya</h1>
+              <p class="lead">
+                Click on the tabs below to view interactive maps of each country
+              </p>
+            </div> -->
+
+            <ul class="nav nav-tabs" id="countryTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="india-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#india"
+                  type="button"
+                  role="tab"
+                  aria-controls="india"
+                  aria-selected="true"
+                >
+                  India
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="kenya-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#kenya"
+                  type="button"
+                  role="tab"
+                  aria-controls="kenya"
+                  aria-selected="false"
+                >
+                  Kenya
+                </button>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="countryTabsContent">
+              <div
+                class="tab-pane fade show active"
+                id="india"
+                role="tabpanel"
+                aria-labelledby="india-tab"
+              >
+                <div class="map-container">
+                 <iframe  class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.5796422893836!2d72.85720237466744!3d19.169869149020023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7a854988e67%3A0x66f59a5e3c2da936!2z4KS14KWA4KS14KSw4KWN4KSVIOCkk-CkrOClh-CksOClieCkryDgpJXgpYngpK7gpLDgpY3gpJwg4KSIIC0g4KSV4KWL4KS14KSw4KWN4KSV4KS_4KSC4KSXICYg4KSR4KSr4KS_4KS4IOCkuOCljeCkquClh-CkuCDgpIfgpKgg4KSX4KWL4KSw4KWH4KSX4KS-4KSC4KS1LCDgpK7gpYHgpILgpKzgpIg!5e0!3m2!1shi!2sin!4v1760252649018!5m2!1shi!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+         
+              </div>
+              <div
+                class="tab-pane fade"
+                id="kenya"
+                role="tabpanel"
+                aria-labelledby="kenya-tab"
+              >
+                <div class="map-container">
+            
+
+                  <iframe  class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.837207860043!2d36.81069587448288!3d-1.2706600356082196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f17e9c1b9bfb5%3A0x4545cce2806952f2!2sBroadwalk%20Residency!5e0!3m2!1shi!2sin!4v1760252690760!5m2!1shi!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Quote End -->
+
+    <!-- Footer Start -->
+   <div
+      class="container-fluid bg-dark text-body footer wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Address</h5>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>WeWork Oberoi Commerz II,
+              21st Floor, Mohan Gokhale Rd, Aarey Milk Colony, Mumbai,
+              Maharashtra – 400063.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Quick Links</h5>
+            <a class="btn btn-link" href="#about_us">About Us</a>
+            <a class="btn btn-link" href="#services">Our Products</a>
+            <a class="btn btn-link" href="#case_study">Case Study</a>
+            <a class="btn btn-link" href="#our_team">Team</a>
+            <a class="btn btn-link" href="#certificate">Certification</a>
+            <a class="btn btn-link" href="#contact_us">Contact Us</a>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Our Offices</h5>
+            <h6 class="text-white">INDIA</h6>
+            <p>
+              WeWork Oberoi Commerz II, 21st Floor, Mohan Gokhale Rd, Aarey Milk
+              Colony, Mumbai, Maharashtra – 400063
+            </p>
+            <h6 class="text-white">KENYA</h6>
+            <p>Broadwalk Residency, Ojijo Rd, Nairobi, Kenya</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Socials</h5>
+            <p class="mb-2">
+              <i style="transform: rotate(90deg);" class="fa fa-phone-alt me-3 text-white"></i>
+              <a class="text-white text-decoration-none" href="tel:91 7208600363">+91 72086 00363</a>
+            </p>
+
+            <p class="mb-2">
+              <i class="fas fa-envelope me-3 text-white"></i>
+              <a class="text-white text-decoration-none" href="mailto:minercomtrade@gmail.com"
+                >minercomtrade@gmail.com</a
+              >
+            </p>
+
+            <p class="mb-2">
+              <i class="fab fa-linkedin me-3 text-white"></i>
+              <a
+                class="text-white text-decoration-none"
+                href="https://www.linkedin.com/company/minercom-trade-and-export-llp/?viewAsMember=true
+"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div
+              class="col-md-6 text-center text-md-start mb-3 mb-md-0 text-white"
+            >
+              &copy; Copyright - MINERCOM TRADE AND EXPORT LLP.
+            </div>
+
+            <div class="col-md-6 text-center text-md-end"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a
+      href="#"
+      class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+        <script src="./js/cart.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      // Initialize EmailJS with your actual public key
+
+      emailjs.init("Pv1KbCsdK5tK4d1rV");
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // Wait a bit longer to ensure all elements are loaded
+        setTimeout(function () {
+          const contactForm = document.querySelector("#contact_us form");
+
+          console.log("Contact form element:", contactForm); // Debug log
+
+          if (contactForm) {
+            contactForm.addEventListener("submit", function (e) {
+              e.preventDefault();
+
+              // Get the submit button safely
+              const submitButton = this.querySelector('button[type="submit"]');
+              console.log("Submit button:", submitButton); // Debug log
+
+              if (!submitButton) {
+                console.error("Submit button not found!");
+                return;
+              }
+
+              const originalText = submitButton.innerHTML;
+
+              // Show loading state
+              submitButton.innerHTML =
+                '<i class="fas fa-spinner fa-spin me-1"></i> Sending...';
+              submitButton.disabled = true;
+
+              // Prepare template parameters
+              const templateParams = {
+                customer_name: document.getElementById("name")?.value || "",
+                customer_email: document.getElementById("email")?.value || "",
+                customer_phone: document.getElementById("phone")?.value || "",
+                customer_designation:
+                  document.getElementById("project")?.value || "",
+                subject: document.getElementById("subject")?.value || "",
+                customer_message:
+                  document.getElementById("message")?.value || "",
+                enquiry_date: new Date().toLocaleDateString(),
+                enquiry_time: new Date().toLocaleTimeString(),
+              };
+
+              console.log("Template params:", templateParams); // Debug log
+
+              // Send email using EmailJS
+              emailjs
+                .send("service_b3p2yvm", "template_tmj6x6d", templateParams)
+                .then(
+                  function (response) {
+                    console.log("SUCCESS!", response.status, response.text);
+                    alert(
+                      "✅ Enquiry sent successfully! We will contact you shortly."
+                    );
+
+                    // Reset form
+                    contactForm.reset();
+                  },
+                  function (error) {
+                    console.log("FAILED...", error);
+                    alert(
+                      "❌ Failed to send enquiry. Please try again or contact us directly."
+                    );
+                  }
+                )
+                .finally(function () {
+                  // Reset button state
+                  submitButton.innerHTML = originalText;
+                  submitButton.disabled = false;
+                });
+            });
+          } else {
+            console.error("Contact form not found! Check the selector.");
+          }
+        }, 100); // Small delay to ensure DOM is fully ready
+      });
+    </script>
+
+      <script>
+      // Close mobile navbar when clicking on navigation links
+      document.addEventListener('DOMContentLoaded', function() {
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navbarCollapse = document.getElementById('navbarCollapse');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        // Check if we're on a mobile device
+        function isMobile() {
+          return window.innerWidth <= 991; // Bootstrap's lg breakpoint
+        }
+        
+        // Close navbar function
+        function closeNavbar() {
+          if (isMobile() && navbarCollapse.classList.contains('show')) {
+            navbarToggler.click(); // This will toggle the navbar closed
+          }
+        }
+        
+        // Add click event to all nav links
+        navLinks.forEach(link => {
+          link.addEventListener('click', function(e) {
+            // Only close navbar for anchor links (not external links)
+            if (this.getAttribute('href').startsWith('#')) {
+              closeNavbar();
+            }
+          });
+        });
+        
+        // Also close navbar when clicking on product cards
+        document.getElementById("agro_products").addEventListener("click", () => {
+          closeNavbar();
+          window.location.href = "./agri.html";
+        });
+
+        document.getElementById("mineral_products").addEventListener("click", () => {
+          closeNavbar();
+          window.location.href = "./minerals.html";
+        });
+
+        document.getElementById("metal_products").addEventListener("click", () => {
+          closeNavbar();
+          window.location.href = "./metals.html";
+        });
+      });
+    </script>
+
+    <script>
+      document.getElementById("agro_products").addEventListener("click", () => {
+        window.location.href = "./agri.html";
+      });
+
+      document
+        .getElementById("mineral_products")
+        .addEventListener("click", () => {
+          window.location.href = "./minerals.html";
+        });
+
+      document
+        .getElementById("metal_products")
+        .addEventListener("click", () => {
+          window.location.href = "./metals.html";
+        });
+    </script>
+  </body>
+</html>
