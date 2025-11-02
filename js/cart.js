@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // --- Add to cart button ---
+  // --- Get a Quote button ---
   document.querySelectorAll(".btn-add-to-cart").forEach(btn => {
     btn.addEventListener("click", () => {
       const id = btn.dataset.id;
