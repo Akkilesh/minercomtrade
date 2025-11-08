@@ -1450,3 +1450,13 @@ img {
 .fa.fa-phone-alt.me-3, .fas.fa-envelope.me-3.text-white, .fab.fa-linkedin.me-3.text-white{
   font-size: 1.7rem !important;
 }
+
+.cert-body p{
+  font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.fa.fa-phone-al{
+  transform: rotate(90deg);
+}
