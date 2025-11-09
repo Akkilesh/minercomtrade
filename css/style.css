@@ -1458,3 +1458,14 @@ img {
 .fa.fa-phone-al{
   transform: rotate(90deg);
 }
+
+/* Mobile devices (portrait and small screens) */
+@media only screen and (max-width: 768px) {
+  .sub-title{
+    font-size: 1.25rem !important;
+  }
+
+  .sub-title1{
+    font-size: 1rem;
+  }
+}
