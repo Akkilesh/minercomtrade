@@ -1301,7 +1301,7 @@ img {
 .fa.fa-phone-alt.text-primary {
   font-size: 1.7rem !important;
   /* color: white !important; */
-  color:#319632 !important;
+  color:#00ff04 !important;
 }
 
 .btn-check:focus + .btn,
@@ -1501,4 +1501,16 @@ img {
   /* Show cursor on hover over product cards */
   .service-hover:hover ~ .custom-cursor {
     transform: translate(-50%, -50%) scale(1);
+  }
+
+  .navbar-expand-lg .navbar-collapse{
+    justify-content: end !important;
+  }
+
+  nav a h3{
+    font-size: 1.25rem !important;
+  }
+
+  .btn-outline-danger{
+    background-color: red !important;
   }

@@ -96,15 +96,9 @@ document.addEventListener("DOMContentLoaded", () => {
       // ✅ Save updated cart
       localStorage.setItem(cartKey, JSON.stringify(cart));
       console.log("Cart saved:", cart);
-
-      // ✅ Reset quantity to 25 after adding to cart
-      // if (qtyInput) {
-      //   qtyInput.value = 25;
-      //   quantities[id] = 25;
-      //   localStorage.setItem(quantityKey, JSON.stringify(quantities));
-      // }
-
-      // --- Optional notification ---
+      
+      // ✅ Update cart count immediately after adding item
+      updateCartCount();
       showNotification();
     });
   });
@@ -117,11 +111,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Optional: Display cart count in navbar
+  // ✅ Update cart count on page load
   updateCartCount();
   
   function updateCartCount() {
-    const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+    // Re-fetch cart from localStorage to ensure we have latest data
+    const currentCart = JSON.parse(localStorage.getItem(cartKey)) || [];
+    const cartCount = currentCart.reduce((total, item) => total + item.quantity, 0);
     console.log("Cart count:", cartCount);
     
     // Update cart badge if it exists
