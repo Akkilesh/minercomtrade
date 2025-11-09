@@ -96,6 +96,23 @@
     
 })(jQuery);
 
+const cursor = document.querySelector('.custom-cursor');
+  const cards = document.querySelectorAll('.service-hover');
+
+  document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
+
+  cards.forEach((card) => {
+    card.addEventListener('mouseenter', () => {
+      cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+    });
+    card.addEventListener('mouseleave', () => {
+      cursor.style.transform = 'translate(-50%, -50%) scale(0)';
+    });
+  });
+
 
 
 
