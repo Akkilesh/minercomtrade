@@ -1514,3 +1514,114 @@ img {
   .btn-outline-danger{
     background-color: red !important;
   }
+
+
+   .cert-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .cert-scroller {
+            overflow: hidden;
+            position: relative;
+            padding: 20px 0;
+        }
+        
+        .cert-track {
+            display: flex;
+            animation: scroll 30s linear infinite;
+            width: max-content;
+        }
+        
+        .cert-track:hover {
+            animation-play-state: paused;
+        }
+        
+        .cert-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            margin: 0 15px;
+            min-width: 280px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        .cert-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .cert-img-container {
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .cert-img-container img {
+            max-height: 100%;
+            object-fit: contain;
+        }
+        
+        .cert-body {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .cert-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        
+        .cert-body p {
+            color: #666;
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+        
+  
+        
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        
+        /* Gradient overlays for scroller edges */
+        .scroller-overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100px;
+            z-index: 2;
+            pointer-events: none;
+        }
+        
+        .scroller-overlay.left {
+            left: 0;
+            background: linear-gradient(to right, #f8f9fa, transparent);
+        }
+        
+        .scroller-overlay.right {
+            right: 0;
+            background: linear-gradient(to left, #f8f9fa, transparent);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .cert-track {
+                animation-duration: 20s;
+            }
+            
+            .cert-card {
+                min-width: 250px;
+            }
+        }

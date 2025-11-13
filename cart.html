@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Minercomtrade</title>
+    <title>Minercomtrade - Cart</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -47,23 +47,28 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+      .cart-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+
+      }
+      .empty-cart {
+        text-align: center;
+        color: #6c757d;
+      }
+      .empty-cart i {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        color: #dee2e6;
+      }
+      .page-header {
+       background-color: #2f8f30 !important;
+      }
+    </style>
   </head>
-  <style>
-    .cart-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    .empty-cart {
-      text-align: center;
-      color: #6c757d;
-    }
-    .empty-cart i {
-      font-size: 4rem;
-      margin-bottom: 20px;
-      color: #dee2e6;
-    }
-  </style>
   <body>
     <!-- Spinner -->
     <div
@@ -78,8 +83,6 @@
         <span class="sr-only">Loading...</span>
       </div>
     </div>
-
-
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
@@ -104,10 +107,7 @@
         <div class="navbar-nav p-4 p-lg-0">
           <a href="./index.html#home" class="nav-item nav-link active">Home</a>
           <a href="./index.html#about_us" class="nav-item nav-link">About</a>
-      
-          <a href="./index.html#products" class="nav-item nav-link"
-            >Products</a
-          >
+          <a href="./index.html#services" class="nav-item nav-link">Products</a>
           <a href="./index.html#case_study" class="nav-item nav-link"
             >Case Study</a
           >
@@ -115,13 +115,12 @@
           <a href="./index.html#certificate" class="nav-item nav-link"
             >Certifications</a
           >
-
           <a href="./index.html#contact_us" class="nav-item nav-link"
             >Contact Us</a
           >
           <a
             style="position: relative"
-            href="././cart.html"
+            href="./cart.html"
             class="nav-item nav-link"
           >
             <i class="fas fa-shopping-cart"></i> View Cart
@@ -137,7 +136,7 @@
     </nav>
 
     <!-- Page Header -->
-    <div class="container-fluid page-header py-5 mb-5">
+    <div class="container-fluid page-header py-5 mb-5" style="background-color: #2f8f30;">
       <div class="container py-5">
         <h1 class="display-3 text-white mb-3 animated slideInDown">
           Your Cart
@@ -155,7 +154,7 @@
       <div class="row mt-5">
         <div class="col-md-8">
           <h3>Checkout Information</h3>
-          <form id="orderForm" class="bg-light rounded">
+          <form id="orderForm" class="bg-light rounded p-4">
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label class="form-label">Full Name *</label>
@@ -219,13 +218,6 @@
               ></textarea>
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-              <!-- <button
-                type="button"
-                id="clearCart"
-                class="btn btn-outline-danger me-md-2"
-              >
-                <i class="fas fa-trash me-1"></i> Clear Cart
-              </button> -->
               <button type="submit" class="btn btn-primary">
                 <i class="fas fa-paper-plane me-1"></i> Send Order Inquiry
               </button>
@@ -244,8 +236,6 @@
     </div>
 
     <!-- Footer -->
-    <!-- Include your footer here -->
-    <!-- Footer Start -->
     <div
       class="container-fluid bg-dark text-body footer wow fadeIn"
       data-wow-delay="0.1s"
@@ -261,12 +251,18 @@
 
           <div class="col-lg-3 col-md-6">
             <h5 class="text-white mb-4">Quick Links</h5>
-            <a class="btn btn-link" href="#about_us">About</a>
-            <a class="btn btn-link" href="#services">Products</a>
-            <a class="btn btn-link" href="#case_study">Case Study</a>
-            <a class="btn btn-link" href="#our_team">Team</a>
-            <a class="btn btn-link" href="#certificate">Certification</a>
-            <a class="btn btn-link" href="#contact_us">Contact Us</a>
+            <a class="btn btn-link" href="./index.html#about_us">About</a>
+            <a class="btn btn-link" href="./index.html#services">Products</a>
+            <a class="btn btn-link" href="./index.html#case_study"
+              >Case Study</a
+            >
+            <a class="btn btn-link" href="./index.html#our_team">Team</a>
+            <a class="btn btn-link" href="./index.html#certificate"
+              >Certification</a
+            >
+            <a class="btn btn-link" href="./index.html#contact_us"
+              >Contact Us</a
+            >
           </div>
 
           <div class="col-lg-3 col-md-6">
@@ -289,7 +285,7 @@
               ></i>
               <a
                 class="text-white text-decoration-none"
-                href="tel:91 7208600363"
+                href="tel:91 9619445583"
                 >+91 96194 45583</a
               >
             </p>
@@ -307,8 +303,7 @@
               <i class="fab fa-linkedin me-3 text-white"></i>
               <a
                 class="text-white text-decoration-none"
-                href="https://www.linkedin.com/company/minercom-trade-and-export-llp/?viewAsMember=true
-"
+                href="https://www.linkedin.com/company/minercom-trade-and-export-llp/?viewAsMember=true"
                 target="_blank"
               >
                 LinkedIn
@@ -325,29 +320,21 @@
             >
               &copy; Copyright - MINERCOM TRADE AND EXPORT LLP.
             </div>
-
             <div class="col-md-6 text-center text-md-end"></div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Footer End -->
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- EmailJS Library -->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <script>
-      // Initialize EmailJS
-      emailjs.init("Pv1KbCsdK5tK4d1rV");
-
+      // Cart functionality
       document.addEventListener("DOMContentLoaded", function () {
         const cartKey = "minercom_cart";
         let cart = JSON.parse(localStorage.getItem(cartKey)) || [];
@@ -355,6 +342,7 @@
         const orderSummary = document.getElementById("orderSummary");
         const cartCount = document.getElementById("cartCount");
 
+        // Hide spinner
         document.getElementById("spinner").classList.remove("show");
 
         function displayCart() {
@@ -366,16 +354,16 @@
                 <i class="fas fa-shopping-cart"></i>
                 <h3>Your cart is empty</h3>
                 <p>Add some products to your cart to see them here.</p>
-                <a href="index.html#products" class="btn btn-primary">
+                <a href="index.html#services" class="btn btn-primary">
                   <i class="fas fa-shopping-bag me-2"></i>Continue Shopping
                 </a>
               </div>
             `;
-            orderSummary.innerHTML = '<p class="text-muted">No items in cart</p>';
+            orderSummary.innerHTML =
+              '<p class="text-muted">No items in cart</p>';
             return;
           }
 
-          // Show products & quantities (no prices)
           let cartHTML = `
             <div class="card">
               <div class="card-header">
@@ -429,13 +417,12 @@
 
           cartContent.innerHTML = cartHTML;
 
-          // Show only total quantity
           orderSummary.innerHTML = `
             <div class="d-flex justify-content-between mb-2">
               <span>Total Quantity:</span>
               <strong>${totalQuantity}</strong>
             </div>
-            <small class="text-muted">You’ll receive a price quote after inquiry.</small>
+            <small class="text-muted">You'll receive a price quote after inquiry.</small>
           `;
 
           attachEventListeners();
@@ -451,7 +438,7 @@
           document.querySelectorAll(".plus-btn").forEach((btn) => {
             btn.addEventListener("click", function () {
               const index = parseInt(this.dataset.index);
-              cart[index].quantity += 1;
+              cart[index].quantity += 25;
               saveCart();
             });
           });
@@ -459,8 +446,8 @@
           document.querySelectorAll(".minus-btn").forEach((btn) => {
             btn.addEventListener("click", function () {
               const index = parseInt(this.dataset.index);
-              if (cart[index].quantity > 1) {
-                cart[index].quantity -= 1;
+              if (cart[index].quantity > 25) {
+                cart[index].quantity -= 25;
                 saveCart();
               }
             });
@@ -482,58 +469,105 @@
           displayCart();
         }
 
-
-        // Submit form via EmailJS
-        document.getElementById("orderForm").addEventListener("submit", function (e) {
-          e.preventDefault();
-
-          if (cart.length === 0) {
-            alert("Please add items to your cart before submitting an order.");
-            return;
-          }
-
-          const formData = new FormData(this);
-          const submitButton = this.querySelector('button[type="submit"]');
-          const originalText = submitButton.innerHTML;
-          submitButton.innerHTML = '<i class="fas fa-spinner fa-spin me-1"></i> Sending...';
-          submitButton.disabled = true;
-
-          const orderDetails = cart
-            .map((item) => `${item.name} — Quantity: ${item.quantity}`)
-            .join("\n");
-
-          const templateParams = {
-            customer_name: formData.get("name"),
-            customer_email: formData.get("email"),
-            customer_phone: formData.get("phone"),
-            customer_company: formData.get("company") || "Not provided",
-            customer_address: formData.get("address"),
-            customer_message: formData.get("message") || "No message",
-            order_details: orderDetails,
-            order_date: new Date().toLocaleDateString(),
-            order_time: new Date().toLocaleTimeString(),
-          };
-
-          emailjs
-            .send("service_b3p2yvm", "template_1lr82m7", templateParams)
-            .then(() => {
-              alert("Order inquiry sent successfully! We’ll contact you shortly.");
-              localStorage.removeItem(cartKey);
-              cart = [];
-              displayCart();
-              document.getElementById("orderForm").reset();
-            })
-            .catch(() => {
-              alert("There was an error sending your inquiry. Please try again.");
-            })
-            .finally(() => {
-              submitButton.innerHTML = originalText;
-              submitButton.disabled = false;
-            });
-        });
-
+        // Initialize cart display
         displayCart();
       });
     </script>
+
+    <!-- Simple Cart Form Handler for Cart Page -->
+    <!-- EmailJS Integration for Cart -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+   <!-- EmailJS Integration for Cart -->
+<!-- EmailJS Integration for Cart -->
+<script>
+(function() {
+  'use strict';
+  
+  if (!window.emailJSInitialized) {
+    emailjs.init("Pv1KbCsdK5tK4d1rV");
+    window.emailJSInitialized = true;
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const orderForm = document.getElementById("orderForm");
+    
+    if (orderForm && !orderForm.hasAttribute('data-emailjs-handled')) {
+      orderForm.setAttribute('data-emailjs-handled', 'true');
+
+      orderForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        const submitButton = this.querySelector('button[type="submit"]');
+        const originalText = submitButton.innerHTML;
+
+        const cartKey = "minercom_cart";
+        const cart = JSON.parse(localStorage.getItem(cartKey)) || [];
+        
+        if (cart.length === 0) {
+          alert("⚠️ Please add items to your cart before submitting.");
+          return;
+        }
+
+        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin me-1"></i> Sending...';
+        submitButton.disabled = true;
+
+        const formElements = this.elements;
+
+        const orderDetails = cart
+          .map((item) => `• ${item.name} — Quantity: ${item.quantity}`)
+          .join("\n");
+
+        const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
+
+        const formData = {
+          customer_name: formElements.name?.value.trim() || '',
+          customer_email: formElements.email?.value.trim() || '',
+          customer_phone: formElements.phone?.value.trim() || '',
+          customer_company: formElements.company?.value.trim() || "Not provided",
+          customer_address: formElements.address?.value.trim() || '',
+          customer_message: formElements.message?.value.trim() || "No additional message",
+          order_details: orderDetails,
+          total_quantity: totalQuantity,
+          order_date: new Date().toLocaleDateString('en-IN'),
+          order_time: new Date().toLocaleTimeString('en-IN')
+        };
+
+        if (!formData.customer_name || !formData.customer_email || !formData.customer_phone || !formData.customer_address) {
+          alert("⚠️ Please fill in all required fields.");
+          submitButton.innerHTML = originalText;
+          submitButton.disabled = false;
+          return;
+        }
+
+        // USE CART ORDER TEMPLATE
+        emailjs.send("service_b3p2yvm", "template_barg63c", formData)
+          .then(function(response) {
+            console.log("✓ Cart order email sent successfully", response);
+            alert("✅ Order inquiry sent successfully!");
+            
+            localStorage.removeItem(cartKey);
+            orderForm.reset();
+            
+            setTimeout(function() {
+              window.location.href = "index.html";
+            }, 1500);
+          })
+          .catch(function(error) {
+            console.error("✗ Failed to send cart order:", error);
+            alert("❌ Failed to send order inquiry. Please try again.");
+          })
+          .finally(function() {
+            submitButton.innerHTML = originalText;
+            submitButton.disabled = false;
+          });
+      });
+    }
+  });
+})();
+</script>
+
+
+
   </body>
 </html>
