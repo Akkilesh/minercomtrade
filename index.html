@@ -48,6 +48,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
       rel="stylesheet"
     />
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  rel="stylesheet"
+/>
     <!-- Add this line in the <head> section -->
     <link
       rel="stylesheet"
@@ -136,6 +140,19 @@
   </head>
 
   <body>
+
+    <div class="mobile-cart-btn d-lg-none">
+      <a href="cart.html" class="btn btn-primary rounded-circle p-3 shadow-lg">
+        <img style="width: 2rem;" src="./img/shopping-cart.png" alt="">
+        <!-- <i class="fas fa-shopping-cart"></i> -->
+        <span
+          id="mobileCartCount"
+          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+          style="display: none"
+          >0</span
+        >
+      </a>
+    </div>
     <!-- Spinner Start -->
     <div
       id="spinner"
@@ -723,132 +740,212 @@
     <!-- Team End -->
 
     <section class="cert-section" id="certificate">
-        <div class="container">
-            <div class="text-center mx-auto pb-5" style="max-width: 800px">
-                <h4 class="text-primary">Certifications & Memberships</h4>
-                <h2 class="mb-2">
-                    Certified by India's key trade authorities to ensure compliance,
-                    trust, and global credibility
-                </h2>
-            </div>
-
-            <div class="cert-scroller">
-                <div class="scroller-overlay left"></div>
-                <div class="scroller-overlay right"></div>
-                <div class="cert-track">
-                    <!-- MEME Certification -->
-                    <div class="cert-card" data-bs-toggle="modal" data-bs-target="#memeModal">
-                        <div class="cert-img-container meme">
-                            <img width="100%" src="./img/dpiit.webp" alt="DPIIT Certification">
-                        </div>
-                        <div class="cert-body">
-                            <h5 class="cert-title">CERTIFICATE OF REGISTRATION</h5>
-                            <p>DIPP219718</p>
-                        </div>
-                    </div>
-
-                    <!-- APEDA Certification -->
-                    <div class="cert-card" data-bs-toggle="modal" data-bs-target="#apedaModal">
-                        <div class="cert-img-container apeda">
-                            <img width="100%" src="./img/aped.jpeg" alt="APEDA Certification">
-                        </div>
-                        <div class="cert-body">
-                            <h5 class="cert-title">APEDA</h5>
-                            <p>RCMC/APEDA/16396/2025-2026</p>
-                        </div>
-                    </div>
-
-                    <!-- FSSAI Certification -->
-                    <div class="cert-card" data-bs-toggle="modal" data-bs-target="#gstModal1">
-                        <div class="cert-img-container gst">
-                            <img width="100%" src="./img/fssai.jpg" alt="FSSAI Certification">
-                        </div>
-                        <div class="cert-body">
-                            <h5 class="cert-title">FSSAI</h5>
-                            <p>11525997000463</p>
-                        </div>
-                    </div>
-
-                    <!-- UDYAM Certification -->
-                    <div class="cert-card" data-bs-toggle="modal" data-bs-target="#gstModal2">
-                        <div class="cert-img-container gst">
-                            <img width="100%" src="./img/Udyam-registration.png" alt="UDYAM Registration">
-                        </div>
-                        <div class="cert-body">
-                            <h5 class="cert-title">UDYAM REGISTRATION</h5>
-                            <p>UDYAM-MH-18-0397127</p>
-                        </div>
-                    </div>
-
-                    <!-- GST Certification -->
-                    <div class="cert-card" data-bs-toggle="modal" data-bs-target="#gstModal2">
-                        <div class="cert-img-container gst">
-                            <img width="80%" src="./img/gst-logo-png-3.png" alt="GST Registration">
-                        </div>
-                        <div class="cert-body">
-                            <h5 class="cert-title">GST REGISTRATION</h5>
-                            <p>27ABRFM3736F1ZY</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Duplicate cards for seamless scrolling -->
-                    <!-- MEME Certification -->
-                    <div class="cert-card" data-bs-toggle="modal" data-bs-target="#memeModal">
-                        <div class="cert-img-container meme">
-                            <img width="100%" src="./img/dpiit.webp" alt="DPIIT Certification">
-                        </div>
-                        <div class="cert-body">
-                            <h5 class="cert-title">CERTIFICATE OF REGISTRATION</h5>
-                            <p>DIPP219718</p>
-                        </div>
-                    </div>
-
-                    <!-- APEDA Certification -->
-                    <div class="cert-card" data-bs-toggle="modal" data-bs-target="#apedaModal">
-                        <div class="cert-img-container apeda">
-                            <img width="100%" src="./img/aped.jpeg" alt="APEDA Certification">
-                        </div>
-                        <div class="cert-body">
-                            <h5 class="cert-title">APEDA</h5>
-                            <p>RCMC/APEDA/16396/2025-2026</p>
-                        </div>
-                    </div>
-
-                    <!-- FSSAI Certification -->
-                    <div class="cert-card" data-bs-toggle="modal" data-bs-target="#gstModal1">
-                        <div class="cert-img-container gst">
-                            <img width="100%" src="./img/fssai.jpg" alt="FSSAI Certification">
-                        </div>
-                        <div class="cert-body">
-                            <h5 class="cert-title">FSSAI</h5>
-                            <p>11525997000463</p>
-                        </div>
-                    </div>
-
-                    <!-- UDYAM Certification -->
-                    <div class="cert-card" data-bs-toggle="modal" data-bs-target="#gstModal2">
-                        <div class="cert-img-container gst">
-                            <img width="100%" src="./img/Udyam-registration.png" alt="UDYAM Registration">
-                        </div>
-                        <div class="cert-body">
-                            <h5 class="cert-title">UDYAM REGISTRATION</h5>
-                            <p>UDYAM-MH-18-0397127</p>
-                        </div>
-                    </div>
-
-                    <!-- GST Certification -->
-                    <div class="cert-card" data-bs-toggle="modal" data-bs-target="#gstModal2">
-                        <div class="cert-img-container gst">
-                            <img width="80%" src="./img/gst-logo-png-3.png" alt="GST Registration">
-                        </div>
-                        <div class="cert-body">
-                            <h5 class="cert-title">GST REGISTRATION</h5>
-                            <p>27ABRFM3736F1ZY</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="text-center mx-auto pb-5" style="max-width: 800px">
+          <h4 class="text-primary">Certifications & Memberships</h4>
+          <h2 class="mb-2">
+            Certified by India's key trade authorities to ensure compliance,
+            trust, and global credibility
+          </h2>
         </div>
+
+        <div class="cert-scroller">
+          <div class="scroller-overlay left"></div>
+          <div class="scroller-overlay right"></div>
+          <div class="cert-track">
+            <!-- MEME Certification -->
+            <div
+              class="cert-card"
+              data-bs-toggle="modal"
+              data-bs-target="#memeModal"
+            >
+              <div class="cert-img-container meme">
+                <img
+                  width="100%"
+                  src="./img/dpiit.webp"
+                  alt="DPIIT Certification"
+                />
+              </div>
+              <div class="cert-body">
+                <h5 class="cert-title">CERTIFICATE OF REGISTRATION</h5>
+                <p>DIPP219718</p>
+              </div>
+            </div>
+
+            <!-- APEDA Certification -->
+            <div
+              class="cert-card"
+              data-bs-toggle="modal"
+              data-bs-target="#apedaModal"
+            >
+              <div class="cert-img-container apeda">
+                <img
+                  width="100%"
+                  src="./img/aped.jpeg"
+                  alt="APEDA Certification"
+                />
+              </div>
+              <div class="cert-body">
+                <h5 class="cert-title">APEDA</h5>
+                <p>RCMC/APEDA/16396/2025-2026</p>
+              </div>
+            </div>
+
+            <!-- FSSAI Certification -->
+            <div
+              class="cert-card"
+              data-bs-toggle="modal"
+              data-bs-target="#gstModal1"
+            >
+              <div class="cert-img-container gst">
+                <img
+                  width="100%"
+                  src="./img/fssai.jpg"
+                  alt="FSSAI Certification"
+                />
+              </div>
+              <div class="cert-body">
+                <h5 class="cert-title">FSSAI</h5>
+                <p>11525997000463</p>
+              </div>
+            </div>
+
+            <!-- UDYAM Certification -->
+            <div
+              class="cert-card"
+              data-bs-toggle="modal"
+              data-bs-target="#gstModal2"
+            >
+              <div class="cert-img-container gst">
+                <img
+                  width="100%"
+                  src="./img/Udyam-registration.png"
+                  alt="UDYAM Registration"
+                />
+              </div>
+              <div class="cert-body">
+                <h5 class="cert-title">UDYAM REGISTRATION</h5>
+                <p>UDYAM-MH-18-0397127</p>
+              </div>
+            </div>
+
+            <!-- GST Certification -->
+            <div
+              class="cert-card"
+              data-bs-toggle="modal"
+              data-bs-target="#gstModal2"
+            >
+              <div class="cert-img-container gst">
+                <img
+                  width="80%"
+                  src="./img/gst-logo-png-3.png"
+                  alt="GST Registration"
+                />
+              </div>
+              <div class="cert-body">
+                <h5 class="cert-title">GST REGISTRATION</h5>
+                <p>27ABRFM3736F1ZY</p>
+              </div>
+            </div>
+
+            <!-- Duplicate cards for seamless scrolling -->
+            <!-- MEME Certification -->
+            <div
+              class="cert-card"
+              data-bs-toggle="modal"
+              data-bs-target="#memeModal"
+            >
+              <div class="cert-img-container meme">
+                <img
+                  width="100%"
+                  src="./img/dpiit.webp"
+                  alt="DPIIT Certification"
+                />
+              </div>
+              <div class="cert-body">
+                <h5 class="cert-title">CERTIFICATE OF REGISTRATION</h5>
+                <p>DIPP219718</p>
+              </div>
+            </div>
+
+            <!-- APEDA Certification -->
+            <div
+              class="cert-card"
+              data-bs-toggle="modal"
+              data-bs-target="#apedaModal"
+            >
+              <div class="cert-img-container apeda">
+                <img
+                  width="100%"
+                  src="./img/aped.jpeg"
+                  alt="APEDA Certification"
+                />
+              </div>
+              <div class="cert-body">
+                <h5 class="cert-title">APEDA</h5>
+                <p>RCMC/APEDA/16396/2025-2026</p>
+              </div>
+            </div>
+
+            <!-- FSSAI Certification -->
+            <div
+              class="cert-card"
+              data-bs-toggle="modal"
+              data-bs-target="#gstModal1"
+            >
+              <div class="cert-img-container gst">
+                <img
+                  width="100%"
+                  src="./img/fssai.jpg"
+                  alt="FSSAI Certification"
+                />
+              </div>
+              <div class="cert-body">
+                <h5 class="cert-title">FSSAI</h5>
+                <p>11525997000463</p>
+              </div>
+            </div>
+
+            <!-- UDYAM Certification -->
+            <div
+              class="cert-card"
+              data-bs-toggle="modal"
+              data-bs-target="#gstModal2"
+            >
+              <div class="cert-img-container gst">
+                <img
+                  width="100%"
+                  src="./img/Udyam-registration.png"
+                  alt="UDYAM Registration"
+                />
+              </div>
+              <div class="cert-body">
+                <h5 class="cert-title">UDYAM REGISTRATION</h5>
+                <p>UDYAM-MH-18-0397127</p>
+              </div>
+            </div>
+
+            <!-- GST Certification -->
+            <div
+              class="cert-card"
+              data-bs-toggle="modal"
+              data-bs-target="#gstModal2"
+            >
+              <div class="cert-img-container gst">
+                <img
+                  width="80%"
+                  src="./img/gst-logo-png-3.png"
+                  alt="GST Registration"
+                />
+              </div>
+              <div class="cert-body">
+                <h5 class="cert-title">GST REGISTRATION</h5>
+                <p>27ABRFM3736F1ZY</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Quote Start -->
@@ -1166,75 +1263,83 @@
     <script src="js/main.js"></script>
     <script src="./js/cart.js"></script>
 
-<!-- EmailJS Integration for CONTACT FORM ONLY -->
- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- EmailJS Integration for CONTACT FORM ONLY -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-<script>
-(function() {
-  'use strict';
-  
-  if (!window.emailJSInitialized) {
-    emailjs.init("Pv1KbCsdK5tK4d1rV");
-    window.emailJSInitialized = true;
-  }
+    <script>
+      (function () {
+        "use strict";
 
-  document.addEventListener('DOMContentLoaded', function() {
-    const contactForm = document.querySelector('#contact_us form');
-    
-    if (contactForm && !contactForm.hasAttribute('data-emailjs-handled')) {
-      contactForm.setAttribute('data-emailjs-handled', 'true');
-      
-      contactForm.addEventListener("submit", function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-
-        const submitButton = this.querySelector('button[type="submit"]');
-        const originalText = submitButton.innerHTML;
-
-        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin me-1"></i> Sending...';
-        submitButton.disabled = true;
-
-        const formElements = this.elements;
-        
-        const formData = {
-          customer_name: formElements.name?.value.trim() || '',
-          customer_email: formElements.email?.value.trim() || '',
-          customer_phone: formElements.phone?.value.trim() || '',
-          customer_designation: formElements.project?.value.trim() || '',
-          customer_subject: formElements.subject?.value.trim() || '',
-          customer_message: formElements.message?.value.trim() || '',
-          submission_date: new Date().toLocaleDateString('en-IN'),
-          submission_time: new Date().toLocaleTimeString('en-IN')
-        };
-
-        if (!formData.customer_name || !formData.customer_email || !formData.customer_phone) {
-          alert("⚠️ Please fill in all required fields.");
-          submitButton.innerHTML = originalText;
-          submitButton.disabled = false;
-          return;
+        if (!window.emailJSInitialized) {
+          emailjs.init("Pv1KbCsdK5tK4d1rV");
+          window.emailJSInitialized = true;
         }
 
-        // USE CONTACT FORM TEMPLATE
-        emailjs.send("service_b3p2yvm", "template_xgxxtkc", formData)
-          .then(function(response) {
-            console.log("✓ Contact form email sent", response);
-            alert("✅ Thank you! We will contact you shortly.");
-            contactForm.reset();
-          })
-          .catch(function(error) {
-            console.error("✗ Failed to send:", error);
-            alert("❌ Failed to send message. Please try again.");
-          })
-          .finally(function() {
-            submitButton.innerHTML = originalText;
-            submitButton.disabled = false;
-          });
-      });
-    }
-  });
-})();
-</script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const contactForm = document.querySelector("#contact_us form");
 
+          if (
+            contactForm &&
+            !contactForm.hasAttribute("data-emailjs-handled")
+          ) {
+            contactForm.setAttribute("data-emailjs-handled", "true");
+
+            contactForm.addEventListener("submit", function (e) {
+              e.preventDefault();
+              e.stopPropagation();
+
+              const submitButton = this.querySelector('button[type="submit"]');
+              const originalText = submitButton.innerHTML;
+
+              submitButton.innerHTML =
+                '<i class="fas fa-spinner fa-spin me-1"></i> Sending...';
+              submitButton.disabled = true;
+
+              const formElements = this.elements;
+
+              const formData = {
+                customer_name: formElements.name?.value.trim() || "",
+                customer_email: formElements.email?.value.trim() || "",
+                customer_phone: formElements.phone?.value.trim() || "",
+                customer_designation: formElements.project?.value.trim() || "",
+                customer_subject: formElements.subject?.value.trim() || "",
+                customer_message: formElements.message?.value.trim() || "",
+                submission_date: new Date().toLocaleDateString("en-IN"),
+                submission_time: new Date().toLocaleTimeString("en-IN"),
+              };
+
+              if (
+                !formData.customer_name ||
+                !formData.customer_email ||
+                !formData.customer_phone
+              ) {
+                alert("⚠️ Please fill in all required fields.");
+                submitButton.innerHTML = originalText;
+                submitButton.disabled = false;
+                return;
+              }
+
+              // USE CONTACT FORM TEMPLATE
+              emailjs
+                .send("service_b3p2yvm", "template_xgxxtkc", formData)
+                .then(function (response) {
+                  console.log("✓ Contact form email sent", response);
+                  alert("✅ Thank you! We will contact you shortly.");
+                  contactForm.reset();
+                })
+                .catch(function (error) {
+                  console.error("✗ Failed to send:", error);
+                  alert("❌ Failed to send message. Please try again.");
+                })
+                .finally(function () {
+                  submitButton.innerHTML = originalText;
+                  submitButton.disabled = false;
+                });
+            });
+          }
+        });
+      })();
+    </script>
 
     <script>
       // Close mobile navbar when clicking on navigation links
@@ -1306,5 +1411,7 @@
           window.location.href = "./metals.html";
         });
     </script>
+    <script src="./js/mobcart.js"></script>
+ 
   </body>
 </html>

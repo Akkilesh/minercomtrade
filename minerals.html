@@ -55,6 +55,17 @@
   </head>
 
   <body>
+       <div class="mobile-cart-btn d-lg-none">
+      <a href="cart.html" class="btn btn-primary rounded-circle p-3 shadow-lg">
+        <img style="width: 2rem;" src="./img/shopping-cart.png" alt="">
+        <span
+          id="mobileCartCount"
+          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+          style="display: none"
+          >0</span
+        >
+      </a>
+    </div>
     <!-- Spinner Start -->
     <div
       id="spinner"
@@ -618,5 +629,7 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="./js/cart.js"></script>
+        <script src="./js/mobcart.js"></script>
+
   </body>
 </html>
